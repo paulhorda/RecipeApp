@@ -1,4 +1,5 @@
 # Recipes App
+Recipes App is a mobile application designed for searching, viewing, and saving recipes. The app offers a user-friendly interface for loading recipes from the network, searching, sorting, filtering, and saving favorite recipes to a local database.
 
 ## Features
 - Load recipes from the network
