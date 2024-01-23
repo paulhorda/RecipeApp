@@ -30,3 +30,6 @@
 - DataStore
 - Paging 3
 - ...
+
+## API
+This app is using public API: [Spoonacular API](https://spoonacular.com/food-api)
