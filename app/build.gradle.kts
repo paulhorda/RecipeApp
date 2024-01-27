@@ -1,14 +1,18 @@
 plugins {
-    id("com.android.library")
+    id("com.android.application")
     id("org.jetbrains.kotlin.android")
 }
 
 android {
-    namespace = "com.example.recipeapp"
+    namespace = "com.example.app"
     compileSdk = 34
 
     defaultConfig {
+        applicationId = "com.example.app"
         minSdk = 26
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -32,7 +36,8 @@ android {
 }
 
 dependencies {
-    implementation(project(":domain"))
+    implementation(project(":presentation"))
+    implementation(project(":data"))
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")

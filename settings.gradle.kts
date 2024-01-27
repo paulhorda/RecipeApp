@@ -17,3 +17,4 @@ rootProject.name = "RecipeApp"
 include(":presentation")
 include(":data")
 include(":domain")
+include(":app")
