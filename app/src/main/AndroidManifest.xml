@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RecipeApp">
         <activity
-            android:name="com.example.presentation.MainActivity"
+            android:name="com.example.presentation.ui.screen.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
