@@ -29,4 +29,10 @@ class MainActivity : AppCompatActivity() {
             title = destination.label
         }
     }
+
+    private fun setupToolbarNavigationBackButton() {
+        binding.materialToolbar.setNavigationOnClickListener {
+            navHostFragment.navController.popBackStack()
+        }
+    }
 }
