@@ -14,6 +14,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater).also { setContentView(it.root) }
+
+        setSupportActionBar(binding.materialToolbar)
+        binding.bottomNavigationView.setupWithNavController(navHostFragment.navController)
+
+        configureActionBarBackButtonVisibility()
+        setupToolbarNavigationBackButton()
     }
 
     private fun configureActionBarBackButtonVisibility() {
