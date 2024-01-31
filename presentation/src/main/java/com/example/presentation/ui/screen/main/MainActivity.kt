@@ -15,4 +15,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater).also { setContentView(it.root) }
     }
+
+    private fun configureActionBarBackButtonVisibility() {
+        navHostFragment.navController.addOnDestinationChangedListener { _, destination, _ ->
+            when (destination.id) {
+                R.id.recipesFragment,
+                R.id.favoritesFragment ->
+                    supportActionBar?.setDisplayHomeAsUpEnabled(false)
+
+                else ->
+                    supportActionBar?.setDisplayHomeAsUpEnabled(true)
+            }
+            title = destination.label
+        }
+    }
 }
