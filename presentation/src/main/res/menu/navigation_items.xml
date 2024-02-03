@@ -4,11 +4,11 @@
     <item
         android:id="@+id/recipesFragment"
         android:title="@string/recipes"
-        android:icon="@drawable/menu_book"/>
+        android:icon="@drawable/chef_hat_icon_48"/>
 
     <item
         android:id="@+id/favoritesFragment"
         android:title="@string/favorites"
-        android:icon="@drawable/favorites_book"/>
+        android:icon="@drawable/heart_icon_48"/>
 
 </menu>

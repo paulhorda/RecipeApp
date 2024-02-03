@@ -1,5 +1,7 @@
 package com.example.app
 
 import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
 
-class RecipesApp: Application()
+@HiltAndroidApp
+class RecipesApp : Application()
