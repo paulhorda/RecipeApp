@@ -5,11 +5,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import com.example.recipeapp.databinding.FragmentRecipesBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class RecipesFragment: Fragment() {
+
+    private val viewModel: RecipesViewModel by viewModels()
 
     private lateinit var binding: FragmentRecipesBinding
 
