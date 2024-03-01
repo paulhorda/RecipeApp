@@ -2,4 +2,16 @@
     <string name="app_name">RecipeApp</string>
     <string name="recipes">Recipes</string>
     <string name="favorites">Favorites</string>
+    <string name="like">like</string>
+    <string name="label">Label</string>
+    <string name="recipe_photo">Recipe photo</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="instructions">Instructions</string>
+    <string name="ready_in_min">%s min</string>
+    <string name="items">%s items</string>
+    <string name="steps">%s steps</string>
+    <string name="result_is_empty">Result is empty</string>
+    <string name="search">Search</string>
+    <string name="recipe">Recipe</string>
+    <string name="no_recipes">Recipes is empty</string>
 </resources>

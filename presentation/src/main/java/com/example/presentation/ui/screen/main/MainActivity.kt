@@ -1,7 +1,9 @@
 package com.example.presentation.ui.screen.main
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.example.recipeapp.R
@@ -18,6 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        installSplashScreen()
         binding = ActivityMainBinding.inflate(layoutInflater).also { setContentView(it.root) }
 
         setSupportActionBar(binding.materialToolbar)
@@ -31,12 +34,16 @@ class MainActivity : AppCompatActivity() {
         navHostFragment.navController.addOnDestinationChangedListener { _, destination, _ ->
             when (destination.id) {
                 R.id.recipesFragment,
-                R.id.favoritesFragment ->
+                R.id.favoritesFragment -> {
                     supportActionBar?.setDisplayHomeAsUpEnabled(false)
+                    binding.bottomNavigationView.visibility = View.VISIBLE
+                }
 
-                else ->
+                else -> {
                     supportActionBar?.setDisplayHomeAsUpEnabled(true)
-            }
+                    binding.bottomNavigationView.visibility = View.GONE
+
+                }            }
             title = destination.label
         }
     }

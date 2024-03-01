@@ -2,4 +2,18 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="shakespeare">#0277ff</color>
+    <color name="shakespeare_light">#a6cfff</color>
+    <color name="astral">#0277ff</color>
+    <color name="puerto_rico">#55C39E</color>
+    <color name="mine_shaft">#212121</color>
+    <color name="regent_gray">#757575</color>
+    <color name="catskill_white">#F6F8FB</color>
+    <color name="porcelain">#ECEEEF</color>
+    <color name="gray_chateau">#A2A9B0</color>
+    <color name="gray_round">#E0DFE2</color>
+    <color name="profile_blue">#E8ECFF</color>
+    <color name="profile_blue_light">#F3F5FF</color>
+    <color name="red">#BF1313</color>
 </resources>
