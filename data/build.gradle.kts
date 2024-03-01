@@ -17,6 +17,9 @@ android {
     }
 
     buildTypes {
+        debug {
+            buildConfigField("String", "API_KEY", "\"8908eade5da4445bb5b53062f62de613\"")
+        }
         release {
             isMinifyEnabled = false
             proguardFiles(
