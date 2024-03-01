@@ -43,6 +43,13 @@ android {
 dependencies {
     implementation(project(":domain"))
 
+
+    val roomVersion = "2.6.1"
+
+    implementation("androidx.room:room-runtime:$roomVersion")
+    implementation("androidx.room:room-ktx:$roomVersion")
+    kapt("androidx.room:room-compiler:$roomVersion")
+
     val retrofitVersion = "2.9.0"
 
     implementation("com.squareup.retrofit2:retrofit:$retrofitVersion")
